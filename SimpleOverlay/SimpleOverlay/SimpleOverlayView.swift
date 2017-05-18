@@ -16,7 +16,7 @@ class SimpleOverlay: UIView {
     /// Sets the distance of the bubble description view label from the edges of the screen. Default is 15.
     public var distanceFromScreenEdge: CGFloat!
 
-    /// Sets the bubble description view label height. Default is 40.
+    /// Sets the bubble description view label height. Default is 80.
     public var height: CGFloat!
 
     /// Sets the bubble description view label from the view described. Default is 25
@@ -26,7 +26,7 @@ class SimpleOverlay: UIView {
     public var viewsDescriptionsCouples: [(UIView, String)]!
 
     // MARK: - Initiliazers
-    init(_ dismissDuration: Double = 0.4, _ distanceFromScreenEdge: CGFloat = 15, _ height: CGFloat = 40, _ distanceFromViewDescribed: CGFloat = 25, viewsDescriptionsCouples: [(UIView, String)]) {
+    init(_ dismissDuration: Double = 0.4, _ distanceFromScreenEdge: CGFloat = 15, _ height: CGFloat = 80, _ distanceFromViewDescribed: CGFloat = 25, viewsDescriptionsCouples: [(UIView, String)]) {
         self.dismissDuration = dismissDuration
         self.distanceFromScreenEdge = distanceFromScreenEdge
         self.height = height
@@ -94,22 +94,21 @@ class SimpleOverlay: UIView {
         // Setup higlighted view to put over viewDescribed
         let viewHighlighted = UIView(frame: CGRect(x: viewDescribed.frame.minX - 5, y: viewDescribed.frame.minY - 5, width: viewDescribed.frame.width + 10, height: viewDescribed.frame.height + 10))
         viewHighlighted.backgroundColor = UIColor.white.withAlphaComponent(0.3)
-        viewHighlighted.layer.cornerRadius = 3
+        viewHighlighted.layer.cornerRadius = 5
         viewHighlighted.layer.masksToBounds = true
         viewHighlighted.layer.zPosition = 100
         viewDescribed.layer.zPosition = 101
 
-        // Setup Arrow image
-        let arrowImage = UIImageView()
-        arrowImage.layer.zPosition = 100
-
         // Setup description label
         let descriptionLabel = PaddingLabel()
+        descriptionLabel.font = UIFont.boldSystemFont(ofSize: 17)
         descriptionLabel.backgroundColor = .white
         descriptionLabel.textAlignment = .left
         descriptionLabel.numberOfLines = 0
         descriptionLabel.adjustsFontSizeToFitWidth = true
-        descriptionLabel.minimumScaleFactor = 0.25
+        descriptionLabel.minimumScaleFactor = 0.5
+        descriptionLabel.layer.cornerRadius = 5
+        descriptionLabel.layer.masksToBounds = true
         descriptionLabel.text = description
 
         // Top and bottom possible maximum points for bubble info frame
@@ -121,18 +120,13 @@ class SimpleOverlay: UIView {
 
         if isBubbleTopWithinFrame {
             descriptionLabel.frame = CGRect(x: distanceFromScreenEdge, y: minY, width: screenWidth - (2 * distanceFromScreenEdge), height: height)
-            arrowImage.frame = CGRect(x: viewHighlighted.frame.minX, y: viewHighlighted.frame.minY - distanceFromViewDescribed, width: viewHighlighted.frame.width, height: distanceFromViewDescribed)
-            arrowImage.image = #imageLiteral(resourceName: "bracket up")
         } else {
             descriptionLabel.frame = CGRect(x: distanceFromScreenEdge, y: maxY, width: screenWidth - (2 * distanceFromScreenEdge), height: height)
-            arrowImage.frame = CGRect(x: viewHighlighted.frame.minX, y: viewHighlighted.frame.maxY, width: viewHighlighted.frame.width, height: distanceFromViewDescribed)
-            arrowImage.image = #imageLiteral(resourceName: "bracket down")
         }
 
         // Add subviews and gesture recognizer
         overlayView.addSubview(viewHighlighted)
         overlayView.addSubview(descriptionLabel)
-        overlayView.addSubview(arrowImage)
         addTapRecognizerToView(overlayView)
 
         // Add overlay view to self with animation
@@ -154,6 +148,5 @@ class SimpleOverlay: UIView {
         if let couple = viewsDescriptionsCouples.last {
             addBubbleInfoView(couple.0, couple.1, height)
         }
-
     }
 }
