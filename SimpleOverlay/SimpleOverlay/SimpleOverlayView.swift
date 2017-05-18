@@ -49,6 +49,9 @@ class SimpleOverlay: UIView {
         },
                        completion: { (Bool) in
                         sender.view?.removeFromSuperview()
+                        if self.subviews.isEmpty {
+                            self.removeFromSuperview()
+                        }
         })
 
         if !viewsDescriptionsCouples.isEmpty {
@@ -90,7 +93,7 @@ class SimpleOverlay: UIView {
 
         // Setup higlighted view to put over viewDescribed
         let viewHighlighted = UIView(frame: CGRect(x: viewDescribed.frame.minX - 10, y: viewDescribed.frame.minY - 10, width: viewDescribed.frame.width + 20, height: viewDescribed.frame.height + 20))
-        viewHighlighted.backgroundColor = UIColor.white.withAlphaComponent(0.5)
+        viewHighlighted.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         viewHighlighted.layer.zPosition = 100
         viewDescribed.layer.zPosition = 101
 

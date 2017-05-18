@@ -31,6 +31,4 @@ class ExampleViewController: UIViewController {
         simpleOverlay.setNeedsLayout()
         view.setNeedsLayout()
     }
-
-
 }
