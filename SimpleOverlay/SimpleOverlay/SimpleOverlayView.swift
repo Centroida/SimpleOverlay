@@ -92,8 +92,10 @@ class SimpleOverlay: UIView {
         overlayView.backgroundColor = UIColor.black.withAlphaComponent(0.75)
 
         // Setup higlighted view to put over viewDescribed
-        let viewHighlighted = UIView(frame: CGRect(x: viewDescribed.frame.minX - 10, y: viewDescribed.frame.minY - 10, width: viewDescribed.frame.width + 20, height: viewDescribed.frame.height + 20))
+        let viewHighlighted = UIView(frame: CGRect(x: viewDescribed.frame.minX - 5, y: viewDescribed.frame.minY - 5, width: viewDescribed.frame.width + 10, height: viewDescribed.frame.height + 10))
         viewHighlighted.backgroundColor = UIColor.white.withAlphaComponent(0.3)
+        viewHighlighted.layer.cornerRadius = 3
+        viewHighlighted.layer.masksToBounds = true
         viewHighlighted.layer.zPosition = 100
         viewDescribed.layer.zPosition = 101
 
