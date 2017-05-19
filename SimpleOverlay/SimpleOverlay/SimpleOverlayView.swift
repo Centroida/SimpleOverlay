@@ -101,9 +101,9 @@ public class SimpleOverlayView: UIView {
 
         // Setup description label
         let descriptionLabel = PaddingLabel()
-        descriptionLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        descriptionLabel.font = UIFont.boldSystemFont(ofSize: UIDevice.current.userInterfaceIdiom == .phone ? 17 : 25)
         descriptionLabel.backgroundColor = .white
-        descriptionLabel.textAlignment = .left
+        descriptionLabel.textAlignment = UIDevice.current.userInterfaceIdiom == .phone ? .left : .center
         descriptionLabel.numberOfLines = 0
         descriptionLabel.adjustsFontSizeToFitWidth = true
         descriptionLabel.minimumScaleFactor = 0.5
