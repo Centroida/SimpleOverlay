@@ -376,6 +376,7 @@
 				26CB73101ECF0E8900AE05EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

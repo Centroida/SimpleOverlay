@@ -22,7 +22,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        simpleOverlayView = SimpleOverlayView(viewsDescriptionsCouples: [(viewTwo, "This is view two, cool right? This is view two, cool right? This is view two, cool right? This is view two, cool right? This is view two, cool right? "), (segmentedControl, "this is segmented control"), (cleanButton, "this is the clean button, use it to clean stuff")])
+        simpleOverlayView = SimpleOverlayView(viewsDescriptionsCouples: [(viewTwo, "This is view two, cool right? This is view two, cool right? This is view two, cool right? This is view two, cool right? This is view two, cool right? "), (segmentedControl, "this is segmented control"), (cleanButton, "this is the clean button, use it to clean stuff")], {
+            (Bool) in
+            print("Finished with overlay :-)")
+        })
 
         view.addSubview(simpleOverlayView)
     }
