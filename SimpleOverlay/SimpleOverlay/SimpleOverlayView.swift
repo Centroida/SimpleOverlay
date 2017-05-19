@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SimpleOverlay: UIView {
+public class SimpleOverlayView: UIView {
 
     /// Time for which you get the bubbly description view dismissed on tap. Default is 0.4
     public var dismissDuration: Double!
@@ -26,7 +26,7 @@ class SimpleOverlay: UIView {
     public var viewsDescriptionsCouples: [(UIView, String)]!
 
     // MARK: - Initiliazers
-    init(_ dismissDuration: Double = 0.4, _ distanceFromScreenEdge: CGFloat = 15, _ height: CGFloat = 80, _ distanceFromViewDescribed: CGFloat = 25, viewsDescriptionsCouples: [(UIView, String)]) {
+    public init(_ dismissDuration: Double = 0.4, _ distanceFromScreenEdge: CGFloat = 15, _ height: CGFloat = 80, _ distanceFromViewDescribed: CGFloat = 25, viewsDescriptionsCouples: [(UIView, String)]) {
         self.dismissDuration = dismissDuration
         self.distanceFromScreenEdge = distanceFromScreenEdge
         self.height = height
@@ -35,7 +35,7 @@ class SimpleOverlay: UIView {
         super.init(frame: UIScreen.main.bounds)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
@@ -137,7 +137,7 @@ class SimpleOverlay: UIView {
         }
     }
 
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         if !subviews.isEmpty {
             for view in subviews {

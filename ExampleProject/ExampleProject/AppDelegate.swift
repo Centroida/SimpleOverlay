@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SimpleOverlay
+//  ExampleProject
 //
-//  Created by Deyan Aleksandrov on 5/18/17.
+//  Created by Deyan Aleksandrov on 5/19/17.
 //  Copyright © 2017 centroida. All rights reserved.
 //
 

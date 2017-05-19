@@ -7,29 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		266A6E5B1ECDEFD400E0F19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266A6E5A1ECDEFD400E0F19C /* AppDelegate.swift */; };
-		266A6E601ECDEFD400E0F19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266A6E5E1ECDEFD400E0F19C /* Main.storyboard */; };
-		266A6E621ECDEFD400E0F19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266A6E611ECDEFD400E0F19C /* Assets.xcassets */; };
-		266A6E651ECDEFD400E0F19C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266A6E631ECDEFD400E0F19C /* LaunchScreen.storyboard */; };
-		266A6E6F1ECDF03300E0F19C /* SimpleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266A6E6C1ECDF03300E0F19C /* SimpleOverlayView.swift */; };
-		266A6E711ECDF03300E0F19C /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266A6E6E1ECDF03300E0F19C /* PaddingLabel.swift */; };
-		266A6E741ECDF07200E0F19C /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266A6E731ECDF07200E0F19C /* ExampleViewController.swift */; };
+		268592191ECF0B8900D7C35F /* SimpleOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 268592171ECF0B8900D7C35F /* SimpleOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		268592211ECF0BC800D7C35F /* SimpleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2685921F1ECF0BC800D7C35F /* SimpleOverlayView.swift */; };
+		268592221ECF0BC800D7C35F /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268592201ECF0BC800D7C35F /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		266A6E571ECDEFD400E0F19C /* SimpleOverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleOverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		266A6E5A1ECDEFD400E0F19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		266A6E5F1ECDEFD400E0F19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		266A6E611ECDEFD400E0F19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		266A6E641ECDEFD400E0F19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		266A6E661ECDEFD400E0F19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		266A6E6C1ECDF03300E0F19C /* SimpleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOverlayView.swift; sourceTree = "<group>"; };
-		266A6E6E1ECDF03300E0F19C /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		266A6E731ECDF07200E0F19C /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		268592141ECF0B8900D7C35F /* SimpleOverlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleOverlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		268592171ECF0B8900D7C35F /* SimpleOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleOverlay.h; sourceTree = "<group>"; };
+		268592181ECF0B8900D7C35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2685921F1ECF0BC800D7C35F /* SimpleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOverlayView.swift; sourceTree = "<group>"; };
+		268592201ECF0BC800D7C35F /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		266A6E541ECDEFD400E0F19C /* Frameworks */ = {
+		268592101ECF0B8900D7C35F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,55 +31,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		266A6E4E1ECDEFD400E0F19C = {
+		2685920A1ECF0B8900D7C35F = {
 			isa = PBXGroup;
 			children = (
-				266A6E591ECDEFD400E0F19C /* SimpleOverlay */,
-				266A6E581ECDEFD400E0F19C /* Products */,
+				268592161ECF0B8900D7C35F /* SimpleOverlay */,
+				268592151ECF0B8900D7C35F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		266A6E581ECDEFD400E0F19C /* Products */ = {
+		268592151ECF0B8900D7C35F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				266A6E571ECDEFD400E0F19C /* SimpleOverlay.app */,
+				268592141ECF0B8900D7C35F /* SimpleOverlay.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		266A6E591ECDEFD400E0F19C /* SimpleOverlay */ = {
+		268592161ECF0B8900D7C35F /* SimpleOverlay */ = {
 			isa = PBXGroup;
 			children = (
-				266A6E731ECDF07200E0F19C /* ExampleViewController.swift */,
-				266A6E6C1ECDF03300E0F19C /* SimpleOverlayView.swift */,
-				266A6E6E1ECDF03300E0F19C /* PaddingLabel.swift */,
-				266A6E721ECDF04100E0F19C /* SupportingFiles */,
+				268592171ECF0B8900D7C35F /* SimpleOverlay.h */,
+				2685921F1ECF0BC800D7C35F /* SimpleOverlayView.swift */,
+				268592201ECF0BC800D7C35F /* PaddingLabel.swift */,
+				268592181ECF0B8900D7C35F /* Info.plist */,
 			);
 			path = SimpleOverlay;
 			sourceTree = "<group>";
 		};
-		266A6E721ECDF04100E0F19C /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				266A6E5E1ECDEFD400E0F19C /* Main.storyboard */,
-				266A6E5A1ECDEFD400E0F19C /* AppDelegate.swift */,
-				266A6E611ECDEFD400E0F19C /* Assets.xcassets */,
-				266A6E631ECDEFD400E0F19C /* LaunchScreen.storyboard */,
-				266A6E661ECDEFD400E0F19C /* Info.plist */,
-			);
-			name = SupportingFiles;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		268592111ECF0B8900D7C35F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268592191ECF0B8900D7C35F /* SimpleOverlay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		266A6E561ECDEFD400E0F19C /* SimpleOverlay */ = {
+		268592131ECF0B8900D7C35F /* SimpleOverlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 266A6E691ECDEFD400E0F19C /* Build configuration list for PBXNativeTarget "SimpleOverlay" */;
+			buildConfigurationList = 2685921C1ECF0B8900D7C35F /* Build configuration list for PBXNativeTarget "SimpleOverlay" */;
 			buildPhases = (
-				266A6E531ECDEFD400E0F19C /* Sources */,
-				266A6E541ECDEFD400E0F19C /* Frameworks */,
-				266A6E551ECDEFD400E0F19C /* Resources */,
+				2685920F1ECF0B8900D7C35F /* Sources */,
+				268592101ECF0B8900D7C35F /* Frameworks */,
+				268592111ECF0B8900D7C35F /* Headers */,
+				268592121ECF0B8900D7C35F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -95,92 +87,67 @@
 			);
 			name = SimpleOverlay;
 			productName = SimpleOverlay;
-			productReference = 266A6E571ECDEFD400E0F19C /* SimpleOverlay.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 268592141ECF0B8900D7C35F /* SimpleOverlay.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		266A6E4F1ECDEFD400E0F19C /* Project object */ = {
+		2685920B1ECF0B8900D7C35F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = centroida;
 				TargetAttributes = {
-					266A6E561ECDEFD400E0F19C = {
+					268592131ECF0B8900D7C35F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = E5C2GPDY2X;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 266A6E521ECDEFD400E0F19C /* Build configuration list for PBXProject "SimpleOverlay" */;
+			buildConfigurationList = 2685920E1ECF0B8900D7C35F /* Build configuration list for PBXProject "SimpleOverlay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 266A6E4E1ECDEFD400E0F19C;
-			productRefGroup = 266A6E581ECDEFD400E0F19C /* Products */;
+			mainGroup = 2685920A1ECF0B8900D7C35F;
+			productRefGroup = 268592151ECF0B8900D7C35F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				266A6E561ECDEFD400E0F19C /* SimpleOverlay */,
+				268592131ECF0B8900D7C35F /* SimpleOverlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		266A6E551ECDEFD400E0F19C /* Resources */ = {
+		268592121ECF0B8900D7C35F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266A6E651ECDEFD400E0F19C /* LaunchScreen.storyboard in Resources */,
-				266A6E621ECDEFD400E0F19C /* Assets.xcassets in Resources */,
-				266A6E601ECDEFD400E0F19C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		266A6E531ECDEFD400E0F19C /* Sources */ = {
+		2685920F1ECF0B8900D7C35F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266A6E711ECDF03300E0F19C /* PaddingLabel.swift in Sources */,
-				266A6E741ECDF07200E0F19C /* ExampleViewController.swift in Sources */,
-				266A6E5B1ECDEFD400E0F19C /* AppDelegate.swift in Sources */,
-				266A6E6F1ECDF03300E0F19C /* SimpleOverlayView.swift in Sources */,
+				268592221ECF0BC800D7C35F /* PaddingLabel.swift in Sources */,
+				268592211ECF0BC800D7C35F /* SimpleOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		266A6E5E1ECDEFD400E0F19C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				266A6E5F1ECDEFD400E0F19C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		266A6E631ECDEFD400E0F19C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				266A6E641ECDEFD400E0F19C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		266A6E671ECDEFD400E0F19C /* Debug */ = {
+		2685921A1ECF0B8900D7C35F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,6 +171,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -228,10 +196,12 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		266A6E681ECDEFD400E0F19C /* Release */ = {
+		2685921B1ECF0B8900D7C35F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,6 +225,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -272,31 +243,48 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		266A6E6A1ECDEFD400E0F19C /* Debug */ = {
+		2685921D1ECF0B8900D7C35F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E5C2GPDY2X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SimpleOverlay/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.centroida.SimpleOverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		266A6E6B1ECDEFD400E0F19C /* Release */ = {
+		2685921E1ECF0B8900D7C35F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E5C2GPDY2X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SimpleOverlay/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.centroida.SimpleOverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,24 +292,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		266A6E521ECDEFD400E0F19C /* Build configuration list for PBXProject "SimpleOverlay" */ = {
+		2685920E1ECF0B8900D7C35F /* Build configuration list for PBXProject "SimpleOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				266A6E671ECDEFD400E0F19C /* Debug */,
-				266A6E681ECDEFD400E0F19C /* Release */,
+				2685921A1ECF0B8900D7C35F /* Debug */,
+				2685921B1ECF0B8900D7C35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		266A6E691ECDEFD400E0F19C /* Build configuration list for PBXNativeTarget "SimpleOverlay" */ = {
+		2685921C1ECF0B8900D7C35F /* Build configuration list for PBXNativeTarget "SimpleOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				266A6E6A1ECDEFD400E0F19C /* Debug */,
-				266A6E6B1ECDEFD400E0F19C /* Release */,
+				2685921D1ECF0B8900D7C35F /* Debug */,
+				2685921E1ECF0B8900D7C35F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 266A6E4F1ECDEFD400E0F19C /* Project object */;
+	rootObject = 2685920B1ECF0B8900D7C35F /* Project object */;
 }
