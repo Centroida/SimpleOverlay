@@ -14,6 +14,7 @@
 		26CB730A1ECF0E8900AE05EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CB73081ECF0E8900AE05EB /* LaunchScreen.storyboard */; };
 		26CB73171ECF0EA400AE05EB /* SimpleOverlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CB73161ECF0E9A00AE05EB /* SimpleOverlay.framework */; };
 		26CB73181ECF0EA400AE05EB /* SimpleOverlay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26CB73161ECF0E9A00AE05EB /* SimpleOverlay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26D2CC341ED31B6A00D6E03C /* ExampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D2CC331ED31B6A00D6E03C /* ExampleProjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 268592131ECF0B8900D7C35F;
 			remoteInfo = SimpleOverlay;
+		};
+		26D2CC361ED31B6A00D6E03C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26CB72F41ECF0E8900AE05EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26CB72FB1ECF0E8900AE05EB;
+			remoteInfo = ExampleProject;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,6 +64,9 @@
 		26CB73091ECF0E8900AE05EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26CB730B1ECF0E8900AE05EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26CB73111ECF0E9A00AE05EB /* SimpleOverlay.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimpleOverlay.xcodeproj; path = ../SimpleOverlay/SimpleOverlay.xcodeproj; sourceTree = "<group>"; };
+		26D2CC311ED31B6A00D6E03C /* ExampleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D2CC331ED31B6A00D6E03C /* ExampleProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProjectTests.swift; sourceTree = "<group>"; };
+		26D2CC351ED31B6A00D6E03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26D2CC2E1ED31B6A00D6E03C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +93,7 @@
 			children = (
 				26CB73111ECF0E9A00AE05EB /* SimpleOverlay.xcodeproj */,
 				26CB72FE1ECF0E8900AE05EB /* ExampleProject */,
+				26D2CC321ED31B6A00D6E03C /* ExampleProjectTests */,
 				26CB72FD1ECF0E8900AE05EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				26CB72FC1ECF0E8900AE05EB /* ExampleProject.app */,
+				26D2CC311ED31B6A00D6E03C /* ExampleProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +128,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		26D2CC321ED31B6A00D6E03C /* ExampleProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				26D2CC331ED31B6A00D6E03C /* ExampleProjectTests.swift */,
+				26D2CC351ED31B6A00D6E03C /* Info.plist */,
+			);
+			path = ExampleProjectTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +159,24 @@
 			productReference = 26CB72FC1ECF0E8900AE05EB /* ExampleProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		26D2CC301ED31B6A00D6E03C /* ExampleProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D2CC3A1ED31B6A00D6E03C /* Build configuration list for PBXNativeTarget "ExampleProjectTests" */;
+			buildPhases = (
+				26D2CC2D1ED31B6A00D6E03C /* Sources */,
+				26D2CC2E1ED31B6A00D6E03C /* Frameworks */,
+				26D2CC2F1ED31B6A00D6E03C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26D2CC371ED31B6A00D6E03C /* PBXTargetDependency */,
+			);
+			name = ExampleProjectTests;
+			productName = ExampleProjectTests;
+			productReference = 26D2CC311ED31B6A00D6E03C /* ExampleProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -144,6 +191,12 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = E5C2GPDY2X;
 						ProvisioningStyle = Automatic;
+					};
+					26D2CC301ED31B6A00D6E03C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = E5C2GPDY2X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26CB72FB1ECF0E8900AE05EB;
 					};
 				};
 			};
@@ -167,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				26CB72FB1ECF0E8900AE05EB /* ExampleProject */,
+				26D2CC301ED31B6A00D6E03C /* ExampleProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +246,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26D2CC2F1ED31B6A00D6E03C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -204,6 +265,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26D2CC2D1ED31B6A00D6E03C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D2CC341ED31B6A00D6E03C /* ExampleProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +280,11 @@
 			isa = PBXTargetDependency;
 			name = SimpleOverlay;
 			targetProxy = 26CB73191ECF0EA400AE05EB /* PBXContainerItemProxy */;
+		};
+		26D2CC371ED31B6A00D6E03C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26CB72FB1ECF0E8900AE05EB /* ExampleProject */;
+			targetProxy = 26D2CC361ED31B6A00D6E03C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,6 +431,34 @@
 			};
 			name = Release;
 		};
+		26D2CC381ED31B6A00D6E03C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E5C2GPDY2X;
+				INFOPLIST_FILE = ExampleProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.centroida.ExampleProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleProject.app/ExampleProject";
+			};
+			name = Debug;
+		};
+		26D2CC391ED31B6A00D6E03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E5C2GPDY2X;
+				INFOPLIST_FILE = ExampleProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.centroida.ExampleProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleProject.app/ExampleProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,6 +476,15 @@
 			buildConfigurations = (
 				26CB730F1ECF0E8900AE05EB /* Debug */,
 				26CB73101ECF0E8900AE05EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D2CC3A1ED31B6A00D6E03C /* Build configuration list for PBXNativeTarget "ExampleProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D2CC381ED31B6A00D6E03C /* Debug */,
+				26D2CC391ED31B6A00D6E03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

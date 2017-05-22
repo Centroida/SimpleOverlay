@@ -25,10 +25,12 @@ public class SimpleOverlayView: UIView {
     /// A tuple to add the views and their descriptions. There is no default.
     public var viewsDescriptionsCouples: [(UIView, String)]!
 
+
+    /// A completion handler to help you do whatever you feel like after the overlay work is done
     public var completionHandler: ((Bool) -> ())?
 
     // MARK: - Initiliazers
-    public init(_ dismissDuration: Double = 0.4,_ distanceFromScreenEdge: CGFloat = 15,_ height: CGFloat = 80, _ distanceFromViewDescribed: CGFloat = 25, viewsDescriptionsCouples: [(UIView, String)],_ completionHandler:  ((Bool)->())?) {
+    public init(dismissDuration: Double = 0.4, distanceFromScreenEdge: CGFloat = 15, height: CGFloat = 80, distanceFromViewDescribed: CGFloat = 25, viewsDescriptionsCouples: [(UIView, String)],completionHandler:  ((Bool)->())?) {
         self.dismissDuration = dismissDuration
         self.distanceFromScreenEdge = distanceFromScreenEdge
         self.height = height
