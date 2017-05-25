@@ -31,7 +31,25 @@ SimpleOverlay is a super simple class inheriting from UIView provided to you as 
 
 ### CocoaPods 
 
- - Cocoapods support to be added.
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```
+$ gem install cocoapods
+```
+
+To integrate SimpleOverlay into your Xcode project using CocoaPods, specify it in your ```Podfile```:
+
+```
+platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target '<Your Target Project Name>' do
+pod 'SimpleOverlay'
+end
+
+```
 
 ### Alternatively:
 
@@ -61,7 +79,7 @@ import SimpleOverlay
 ### Using SimpleOverlay without setting all the variables but just the viewsDescriptionsCouples:
 
 ```swift
-    /// Views declared in Main.Storyboard.    
+    /// Views declared and connected to storyboard.    
     @IBOutlet weak var viewTwo: UIView!
     @IBOutlet weak var cleanButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!    
@@ -73,6 +91,31 @@ import SimpleOverlay
                                                                             (cleanButton, "this is the clean button, use it to clean stuff")],
                                                   completionHandler: nil)
         view.addSubview(simpleOverlayView)
+    }
+```
+
+### Using SimpleOverlay setting all the variables available:
+
+```swift
+    /// Views declared and connected to storyboard.    
+    @IBOutlet weak var viewTwo: UIView!
+    @IBOutlet weak var cleanButton: UIButton!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!    
+
+     override func viewDidLoad() {
+        super.viewDidLoad()
+        let simpleOverlayView =  SimpleOverlayView(dismissDuration: 0.6,
+                                       distanceFromScreenEdge: 67,
+                                       height: 56,
+                                       distanceFromViewDescribed: 22,
+                                       viewsDescriptionsCouples: [(searchTextField, "This is where you can search for stores or offers 😀"),
+                                                                  (settingsButton, "Tap this button check out your account details and offer history 😊"),
+                                                                  (switchButton, "Tap this button to switch between stores and offers 😊")],
+                                       completionHandler: { (Bool) in
+                                        // Add some animation as a follow up ...
+        })
+        
+         view.addSubview(simpleOverlayView)
     }
 ```
   
