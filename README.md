@@ -12,7 +12,7 @@ SimpleOverlay is a super simple class inheriting from UIView provided to you as 
 
 ## Preview
 
-![](Link to giffy needed)   
+![](https://media.giphy.com/media/7jXYafkG3Yf96/giphy.gif)   
 
 ## Features
 
@@ -35,7 +35,7 @@ SimpleOverlay is a super simple class inheriting from UIView provided to you as 
 
 ### Alternatively:
 
-- Git submodule add https://github.com/Centroida/SimpleOverlay.git.
+- Git submodule add https://github.com/Centroida/SimpleOverlay.git
 - Drag the SimpleOverlay.xcodeproj file into your Xcode project (Xcode will ask to create a workspace file if your project does not have one already)
 - Under the main app target, open the General tab and add SwiftImageCarousel under the Embedded Binaries section
 - Build the SimpleOverlay as a target before you import it
@@ -58,7 +58,7 @@ SimpleOverlay is a super simple class inheriting from UIView provided to you as 
 import SimpleOverlay
 ```
 
-### Using SimpleOverlay without setting all the variables but just the viewsDescriptionsCouples
+### Using SimpleOverlay without setting all the variables but just the viewsDescriptionsCouples:
 
 ```swift
     /// Views declared in Main.Storyboard.    
